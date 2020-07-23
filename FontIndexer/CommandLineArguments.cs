@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FontIndexer
 {
-    class CommandLineArguments
+    public class CommandLineArguments
     {
         [Option("source", Required = true, HelpText = "Source directory")]
         public string SourceDirectory { get; set; }

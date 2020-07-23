@@ -13,7 +13,7 @@ namespace FontIndexer
         static char[] IgnoredChars = new[] { (char)160 };
         static void Main(string[] args)
         {
-            CommandLine.Parser.Default.ParseArguments(args).WithParsed<CommandLineArguments>((arguments) =>
+            CommandLine.Parser.Default.ParseArguments<CommandLineArguments>(args).WithParsed<CommandLineArguments>((arguments) =>
             {
                 var files = GetFiles(arguments.SourceDirectory, arguments.Recursive);
                 var mapping = CreateMapping(files);
