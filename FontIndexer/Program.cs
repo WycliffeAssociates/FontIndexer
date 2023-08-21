@@ -44,7 +44,7 @@ namespace FontIndexer
                     {
                         typeface = reader.Read(stream);
                     }
-                    catch (Exception ex)
+                    catch
                     {
                         Console.WriteLine($"Can't open {f}");
                         continue;
